@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type= text], select{
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 8px 0px;
+            box-sizing: border-box;
+        }
+        .formGeneral{
+            background-color: gray;
+            padding: 20px;
+            margin: 10px 350px;
+        
+        }
+        input[type = submit]{
+            width: 100%;
+            padding: 13px;
+            background-color: blueviolet;
+            border:none;
+            border-radius: 15px;
+            color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <form class="formGeneral">
+        <label>Ad:</label>
+        <input type="text" name="firstname" placeholder="Adınızı giriniz...">
+        <label>Soyad:</label>
+        <input type="text" name="lastname" placeholder="Soyadınızı giriniz...">
+        <label>Ülkeler:</label>
+        <select name="country">
+            <option value="tr">Türkiye</option>
+            <option value="fr">Français</option>
+            <option value="en">England</option>
+        </select>
+        <input type="submit" value="Kaydet">
+    
+    </form>
+</body>
+</html>
