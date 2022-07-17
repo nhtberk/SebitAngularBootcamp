@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .header {
+        display: flex;
+        justify-content: space-between;
+        height: 70px;
+        align-items: center;
+        background-color: blueviolet;
+        padding: 0px 15px;
+      }
+      .header img {
+        border-radius: 5px;
+      }
+      .headerLink {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        margin-right: 13px;
+      }
+      .manset {
+        background-image: url("banner.jpg");
+        height: 400px;
+        position: relative;
+      }
+      .mansetIcerik {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 38px;
+      }
+      .imgMain {
+        display: flex;
+        justify-content: center;
+        margin: 30px 0px;
+      }
+      .imgDiv {
+        border: 2px dotted black;
+        width: 200px;
+        border-radius: 30px;
+        margin-right: 30px;
+      }
+      .imgDiv img {
+        border-radius: 30px 30px 0px 0px;
+        width: 100%;
+      }
+      .imgDiv h3 {
+        text-align: center;
+        color: red;
+      }
+      .imgDiv p {
+        padding: 0px 20px;
+      }
+      .footer {
+        margin-top: 20px;
+        background-color: coral;
+        height: 130px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .footerLinkArea {
+        display: flex;
+        flex-direction: column;
+      }
+      .footerLink{
+        color: black;
+        text-decoration: none;
+      }
+      .fiyat {
+        color: red;
+        text-align: center;
+      }
+      .button {
+        background-color: green;
+        border-radius: 30px;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+      }
+      @media only screen and (max-width: 900px) {
+        .imgMain {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(247px, 1fr));
+          gap: 2rem;
+          margin: 4rem 5vw;
+          padding: 0;
+        }
+        .imgDiv {
+          width: 100%;
+          margin-bottom: 30px;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        .imgMain {
+          flex-direction: column;
+        }
+        .imgDiv {
+          width: 100%;
+          margin-bottom: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div>
+        <img src="burgerlogo.png" height="60" />
+      </div>
+      <div>
+        <a class="headerLink" href="">Home</a>
+        <a class="headerLink" href="">About</a>
+        <a class="headerLink" href="">Contact</a>
+      </div>
+    </div>
+
+    <div class="manset">
+      <div class="mansetIcerik">
+        <h3>Efsane Banner</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
+          corporis adipisci voluptate odit rem distinctio voluptates ipsum,
+          quaerat aperiam praesentium laboriosam fugiat tempora labore unde ad
+          accusantium aut iste. Et.
+        </p>
+      </div>
+    </div>
+
+    <div class="imgMain">
+      <div class="imgDiv">
+        <img class="efso" src="burger.jpg" />
+        <h3>Kasap Burger</h3>
+        <p>Bol Malzemeli Efsane Burger</p>
+        <div class="fiyat">
+          <p style="font-size: 20px">
+            45.99 <span style="font-style: italic">TL</span>
+          </p>
+        </div>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+          "
+        >
+          <button class="button">Satın Al</button>
+        </div>
+      </div>
+      <div class="imgDiv">
+        <img class="efso" src="burger.jpg" />
+        <h3>Kasap Burger</h3>
+        <p>Bol Malzemeli Efsane Burger</p>
+        <div class="fiyat">
+          <p style="font-size: 20px">
+            45.99 <span style="font-style: italic">TL</span>
+          </p>
+        </div>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+          "
+        >
+          <button class="button">Satın Al</button>
+        </div>
+      </div>
+      <div class="imgDiv">
+        <img class="efso" src="burger.jpg" />
+        <h3>Kasap Burger</h3>
+        <p>Bol Malzemeli Efsane Burger</p>
+        <div class="fiyat">
+          <p style="font-size: 20px">
+            45.99 <span style="font-style: italic">TL</span>
+          </p>
+        </div>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+          "
+        >
+          <button class="button">Satın Al</button>
+        </div>
+      </div>
+      <div class="imgDiv">
+        <img class="efso" src="burger.jpg" />
+        <h3>Kasap Burger</h3>
+        <p>Bol Malzemeli Efsane Burger</p>
+        <div class="fiyat">
+          <p style="font-size: 20px">
+            45.99 <span style="font-style: italic">TL</span>
+          </p>
+        </div>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+          "
+        >
+          <button class="button">Satın Al</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="imgMain">
+      <div class="imgDiv">
+        <img class="efso" src="burger.jpg" />
+        <h3>Kasap Burger</h3>
+        <p>Bol Malzemeli Efsane Burger</p>
+        <div class="fiyat">
+          <p style="font-size: 20px">
+            45.99 <span style="font-style: italic">TL</span>
+          </p>
+        </div>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+          "
+        >
+          <button class="button">Satın Al</button>
+        </div>
+      </div>
+      <div class="imgDiv">
+        <img class="efso" src="burger.jpg" />
+        <h3>Kasap Burger</h3>
+        <p>Bol Malzemeli Efsane Burger</p>
+        <div class="fiyat">
+          <p style="font-size: 20px">
+            45.99 <span style="font-style: italic">TL</span>
+          </p>
+        </div>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+          "
+        >
+          <button class="button">Satın Al</button>
+        </div>
+      </div>
+      <div class="imgDiv">
+        <img class="efso" src="burger.jpg" />
+        <h3>Kasap Burger</h3>
+        <p>Bol Malzemeli Efsane Burger</p>
+        <div class="fiyat">
+          <p style="font-size: 20px">
+            45.99 <span style="font-style: italic">TL</span>
+          </p>
+        </div>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+          "
+        >
+          <button class="button">Satın Al</button>
+        </div>
+      </div>
+      <div class="imgDiv">
+        <img class="efso" src="burger.jpg" />
+        <h3>Kasap Burger</h3>
+        <p>Bol Malzemeli Efsane Burger</p>
+        <div class="fiyat">
+          <p style="font-size: 20px">
+            45.99 <span style="font-style: italic">TL</span>
+          </p>
+        </div>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+          "
+        >
+          <button class="button">Satın Al</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footerLinkArea">
+        <ol style="list-style-type: none">
+          <li style="margin-top:15px; margin-bottom:15px"><a class="footerLink" href="">Anasayfa</a></li>
+          <li style="margin-bottom:15px"><a class="footerLink" href="">Hakkımızda</a></li>
+          <li style="margin-bottom:15px"><a class="footerLink" href="">İletişim</a></li>
+      </ol>
+      </div>
+      <div class="footerImg">
+        <img src="burgerlogo.png" width="120px" />
+      </div>
+      <div class="footerLinkArea">
+        <ol style="list-style-type: none">
+          <li style="margin-top:15px; margin-bottom:15px"><a class="footerLink" href="">Burgerler</a></li>
+          <li style="margin-bottom:15px"><a class="footerLink" href="">Restorantlar</a></li>
+          <li style="margin-bottom:15px"><a class="footerLink" href="">Kariyer</a></li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>
