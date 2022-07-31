@@ -1,0 +1,61 @@
+<div class="mainDiv">
+  <mat-card class="example-card" style="min-width: 300px">
+    <mat-card-header>
+      <mat-card-title>Kayıt Ol</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form class="loginForm" [formGroup]="registerForm">
+        <mat-form-field>
+          <mat-label>Adınız</mat-label>
+          <input formControlName="ad" matInput placeholder="John" />
+          <mat-error *ngIf="registerForm.get('ad')?.hasError('required')">
+            Lütfen Adınızı giriniz.
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Soyadınız</mat-label>
+          <input formControlName="soyad" matInput placeholder="Doe" />
+          <mat-error *ngIf="registerForm.get('soyad')?.hasError('required')">
+            Lütfen Soyadınızı giriniz.
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Email</mat-label>
+          <input formControlName="email" matInput placeholder="pat@example.com" />
+          <mat-error *ngIf="registerForm.get('email')?.hasError('required')">
+            Lütfen Emailinizi giriniz.
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Şifre</mat-label>
+          <input formControlName="password" type="password" matInput placeholder="Şifrenizi Giriniz" />
+          <mat-error *ngIf="registerForm.get('password')?.hasError('required')">
+            Lütfen Şifrenizi giriniz.
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Şifre Tekrarı</mat-label>
+          <input formControlName="passwordtekrar" type="password" matInput placeholder="Şifrenizi Tekrar Giriniz" />
+          <mat-error *ngIf="registerForm.get('passwordtekrar')?.hasError('required')">
+            Lütfen Şifrenizi Tekrar giriniz.
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Telefon</mat-label>
+          <input formControlName="telefon" type="phone" matInput placeholder="Telefonunuzu Giriniz" />
+          <mat-error *ngIf="registerForm.get('telefon')?.hasError('required')">
+            Lütfen Telefon numaranızı giriniz.
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Adress</mat-label>
+          <textarea formControlName="adres" matInput placeholder="Adresinizi giriniz."></textarea>
+          <mat-error *ngIf="registerForm.get('adres')?.hasError('required')">
+            Lütfen Adresinizi giriniz.
+          </mat-error>
+        </mat-form-field>
+        <button mat-raised-button color="primary">Giriş Yap</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

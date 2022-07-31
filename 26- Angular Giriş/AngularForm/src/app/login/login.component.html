@@ -1,0 +1,48 @@
+
+<div class="mainDiv">
+  <mat-card class="example-card" style="min-width: 300px">
+    <mat-card-header>
+      <mat-card-title>Giriş Yap</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form [formGroup]="loginForm" class="loginForm">
+        <mat-form-field>
+          <mat-label>Email</mat-label>
+          <input
+            formControlName="email"
+            matInput
+            placeholder="pat@example.com"
+          />
+          <mat-error *ngIf="loginForm.get('email')?.hasError('required')">
+            Lütfen emailinizi giriniz.
+          </mat-error>
+          <mat-error *ngIf="loginForm.get('email')?.hasError('email')">
+            Lütfen emailinizi doğru formatta giriniz.
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Şifre</mat-label>
+          <input
+            formControlName="password"
+            type="password"
+            matInput
+            placeholder="Şifrenizi Giriniz"
+          />
+          <mat-error *ngIf="loginForm.get('password')?.hasError('required')">
+            Lütfen şifrenizi giriniz.
+          </mat-error>
+          <mat-error *ngIf="loginForm.get('password')?.hasError('minlength')">
+            Minimum 8 karakter giriniz.
+          </mat-error>
+        </mat-form-field>
+        <button
+          mat-raised-button
+          color="primary"
+          [disabled]="loginForm.invalid"
+        >
+          Giriş Yap
+        </button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
