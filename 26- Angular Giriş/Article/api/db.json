@@ -1,0 +1,23 @@
+{
+  "articles": [
+    {
+      "author": "asd",
+      "title": "asd",
+      "content": "asd",
+      "comments": [
+        {
+          "username": "asdasd",
+          "comment": "asdasd"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "author": "Nihat Berk ÖZ",
+      "title": "İlk Makalem",
+      "content": "Bu sitede makale paylaşımları yapılmaktadır.",
+      "comments": [],
+      "id": 2
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-lg-6">
+      <img class="w-100" src="../../assets/images/image{{ blog.imageId }}.jpg" />
+    </div>
+    <div class="col-lg-6">
+      <div class="title">
+        <h2>{{ blog.title }}</h2>
+      </div>
+      <div class="text">{{ blog.body }}</div>
+    </div>
+  </div>
+  <div class="row bg-light mt-2 border" *ngFor="let c of comments">
+    <div class="col-lg-2 d-flex justify-content-center align-content-center align-items-center">
+      <img
+        style="border-radius: 50%"
+        width="80px"
+        src="../../assets/images/profile/profile{{ c.userId }}.jpg"
+      />
+    </div>
+    <div class="col-lg-10">
+      <h2>{{ c.name }}</h2>
+      <p>{{c.body}}</p>
+    </div>
+  </div>
+</div>

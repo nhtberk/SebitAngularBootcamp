@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="d-flex align-content-center align-items-center flex-column mt-2">
+    <button mat-raised-button color="primary" [routerLink]="['/create']">
+      Yeni Yazı Oluştur
+    </button>
+    <mat-card *ngFor="let article of articles; let i = index" class="mt-4 w-50" [routerLink]="'/view/'+i">
+      <mat-card-header>{{ article.title }}</mat-card-header>
+      <mat-card-subtitle><b>Yazar:</b> {{ article.author }}</mat-card-subtitle>
+      <mat-card-content>{{ article.content }}</mat-card-content>
+    </mat-card>
+  </div>
+</div>

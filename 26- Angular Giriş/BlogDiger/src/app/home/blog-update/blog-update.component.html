@@ -1,0 +1,37 @@
+<form [formGroup]="form" class="mt-4">
+  <div class="container">
+    <div class="row">
+      <mat-form-field>
+        <mat-label>Blog Başlığı:</mat-label>
+        <input matInput formControlName="title" />
+        <mat-error *ngIf="form.get('title')?.hasError('required')"
+          >Blog başlığı zorunludur.</mat-error
+        >
+      </mat-form-field>
+    </div>
+    <div class="row">
+      <mat-form-field>
+        <mat-label>Blog İçeriği:</mat-label>
+        <textarea
+          matInput
+          formControlName="body"
+          cols="40"
+          rows="10"
+        ></textarea>
+        <mat-error *ngIf="form.get('body')?.hasError('required')"
+          >Blog içeriği zorunludur.</mat-error
+        >
+      </mat-form-field>
+    </div>
+    <div>
+      <button
+        mat-raised-button
+        color="primary"
+        [disabled]="!form.valid"
+        (click)="onSubmit()"
+      >
+        Güncelle
+      </button>
+    </div>
+  </div>
+</form>
